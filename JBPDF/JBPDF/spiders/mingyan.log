@@ -1,0 +1,64 @@
+2020-04-25 20:47:50 [scrapy.core.scraper] ERROR: Error processing {'file_urls': ['/do/plus/download1.php?open=1&aid=153&cid=3&link=ZWQyazovL3xmaWxlfCU1QkFTUCVFNyVCQiU4RiVFNSU4NSVCOCVFNiVBOCVBMSVFNSU5RCU5NyVFNSVCQyU4MCVFNSU4RiU5MSVFNSVBNCVBNyVFNSU4NSVBOCU1RC4lMjhBU1AlRTclQkIlOEYlRTUlODUlQjglRTYlQTglQTElRTUlOUQlOTclRTUlQkMlODAlRTUlOEYlOTElRTUlQTQlQTclRTUlODUlQTglMjkuJUU4JTk2JTlCJUU1JUIwJThGJUU5JUJFJTk5LiVFNiU4OSVBQiVFNiU4RiU4RiVFNyU4OSU4OC5yYXJ8NjYzOTg4NzV8MzhiNWQwMjY2Nzc2MDQzZDNmZGE1YTJjYjMyNDNkMTV8aD1kem40bTViZ292Nm1sazJrdTV1N3BzeGdrc3h1Nm03dnwv'],
+ 'title': 'ASP经典模块开发大全 pdf版'}
+Traceback (most recent call last):
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/media.py", line 79, in process_item
+    requests = arg_to_iter(self.get_media_requests(item, info))
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/files.py", line 460, in get_media_requests
+    return [Request(x) for x in item.get(self.files_urls_field, [])]
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/files.py", line 460, in <listcomp>
+    return [Request(x) for x in item.get(self.files_urls_field, [])]
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 26, in __init__
+    self._set_url(url)
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 70, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: /do/plus/download1.php?open=1&aid=153&cid=3&link=ZWQyazovL3xmaWxlfCU1QkFTUCVFNyVCQiU4RiVFNSU4NSVCOCVFNiVBOCVBMSVFNSU5RCU5NyVFNSVCQyU4MCVFNSU4RiU5MSVFNSVBNCVBNyVFNSU4NSVBOCU1RC4lMjhBU1AlRTclQkIlOEYlRTUlODUlQjglRTYlQTglQTElRTUlOUQlOTclRTUlQkMlODAlRTUlOEYlOTElRTUlQTQlQTclRTUlODUlQTglMjkuJUU4JTk2JTlCJUU1JUIwJThGJUU5JUJFJTk5LiVFNiU4OSVBQiVFNiU4RiU4RiVFNyU4OSU4OC5yYXJ8NjYzOTg4NzV8MzhiNWQwMjY2Nzc2MDQzZDNmZGE1YTJjYjMyNDNkMTV8aD1kem40bTViZ292Nm1sazJrdTV1N3BzeGdrc3h1Nm03dnwv
+2020-04-25 20:48:01 [scrapy.core.scraper] ERROR: Error processing {'file_urls': ['/do/plus/download1.php?open=1&aid=33185&cid=3&link=ZWQyazovL3xmaWxlfCVFNyVBOCU4QiVFNSVCQSU4RiVFNSVBNCVBOSVFNCVCOCU4QkFTUCVFNSVBRSU5RSVFNCVCRSU4QiVFOCU4NyVBQSVFNSVBRCVBNiVFNiU4OSU4QiVFNSU4NiU4QyVFOSU4MCU5QSVFOCVCRiU4NzMyMiVFNyU5NCVCNSVFNSVBRCU5MCVFNiU5NSU5OSVFNyVBOCU4Qi5yYXJ8NDEyMzg1MTB8NWQxYjY2MDhmYzkzN2VmMzM0ZjQ1NGE2MmQwNDk2NDR8aD1tM2l2ZndudWF4YnRwdXdxcHg2Z3J3bjJlMjR5ZmFlYnwv'],
+ 'title': 'ASP实例自学手册 通过322个例子 随书光盘'}
+Traceback (most recent call last):
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/media.py", line 79, in process_item
+    requests = arg_to_iter(self.get_media_requests(item, info))
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/files.py", line 460, in get_media_requests
+    return [Request(x) for x in item.get(self.files_urls_field, [])]
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/files.py", line 460, in <listcomp>
+    return [Request(x) for x in item.get(self.files_urls_field, [])]
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 26, in __init__
+    self._set_url(url)
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 70, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: /do/plus/download1.php?open=1&aid=33185&cid=3&link=ZWQyazovL3xmaWxlfCVFNyVBOCU4QiVFNSVCQSU4RiVFNSVBNCVBOSVFNCVCOCU4QkFTUCVFNSVBRSU5RSVFNCVCRSU4QiVFOCU4NyVBQSVFNSVBRCVBNiVFNiU4OSU4QiVFNSU4NiU4QyVFOSU4MCU5QSVFOCVCRiU4NzMyMiVFNyU5NCVCNSVFNSVBRCU5MCVFNiU5NSU5OSVFNyVBOCU4Qi5yYXJ8NDEyMzg1MTB8NWQxYjY2MDhmYzkzN2VmMzM0ZjQ1NGE2MmQwNDk2NDR8aD1tM2l2ZndudWF4YnRwdXdxcHg2Z3J3bjJlMjR5ZmFlYnwv
+2020-04-25 20:51:01 [scrapy.core.scraper] ERROR: Error processing {'file_urls': ['/do/plus/download1.php?open=1&aid=895&cid=3&link=aHR0cDovL2QyLmthb3RpOC5jb206ODEvMjAwNzA5LzIwMDcwOTIxMDA5LnJhcj81ODAzNDAxMzM5MjY2eDEyMjA2ODkwMzl4NTgwMzQwMzI1NTIzOC0wNWVmNTk3NDEwMDE3MzU4MjlhMzU5NjVhZTY3MGFkOA%3D%3D'],
+ 'title': '超星版ASP WEB编程实例教程'}
+Traceback (most recent call last):
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/media.py", line 79, in process_item
+    requests = arg_to_iter(self.get_media_requests(item, info))
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/files.py", line 460, in get_media_requests
+    return [Request(x) for x in item.get(self.files_urls_field, [])]
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/files.py", line 460, in <listcomp>
+    return [Request(x) for x in item.get(self.files_urls_field, [])]
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 26, in __init__
+    self._set_url(url)
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 70, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: /do/plus/download1.php?open=1&aid=895&cid=3&link=aHR0cDovL2QyLmthb3RpOC5jb206ODEvMjAwNzA5LzIwMDcwOTIxMDA5LnJhcj81ODAzNDAxMzM5MjY2eDEyMjA2ODkwMzl4NTgwMzQwMzI1NTIzOC0wNWVmNTk3NDEwMDE3MzU4MjlhMzU5NjVhZTY3MGFkOA%3D%3D
+2020-04-25 20:51:02 [scrapy.core.scraper] ERROR: Error processing {'file_urls': ['/do/plus/download1.php?open=1&aid=7817&cid=3&link=ZnRwOi8vZnJlZWRvbTE6NGgzMjZGc2FldDE2c2VAMjE4LjE2LjIyNC4xNDIvZWJvb2svZWJvb2syMDA2MTEvYXNwJUQ3JUU5JUJDJUZFJUJGJUFBJUI3JUEyJUQ2JUI4JUM0JUNGLnJhcg%3D%3D'],
+ 'title': 'ASP组件开发指南电子书'}
+Traceback (most recent call last):
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/media.py", line 79, in process_item
+    requests = arg_to_iter(self.get_media_requests(item, info))
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/files.py", line 460, in get_media_requests
+    return [Request(x) for x in item.get(self.files_urls_field, [])]
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/pipelines/files.py", line 460, in <listcomp>
+    return [Request(x) for x in item.get(self.files_urls_field, [])]
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 26, in __init__
+    self._set_url(url)
+  File "/var/sw/anaconda3/envs/spider/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 70, in _set_url
+    raise ValueError('Missing scheme in request url: %s' % self._url)
+ValueError: Missing scheme in request url: /do/plus/download1.php?open=1&aid=7817&cid=3&link=ZnRwOi8vZnJlZWRvbTE6NGgzMjZGc2FldDE2c2VAMjE4LjE2LjIyNC4xNDIvZWJvb2svZWJvb2syMDA2MTEvYXNwJUQ3JUU5JUJDJUZFJUJGJUFBJUI3JUEyJUQ2JUI4JUM0JUNGLnJhcg%3D%3D
